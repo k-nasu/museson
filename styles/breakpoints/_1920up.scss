@@ -1,0 +1,83 @@
+/******************************************************************
+
+Stylesheet: 1920px以上のモニタで適用
+
+******************************************************************/
+.btn {
+    padding: 10px 110px;
+}
+
+.font-sm {
+    font-size: 17px;
+  }
+  .font-md {
+    font-size: 24px;
+  }
+  .font-lr {
+    font-size: 28px;
+  }
+  .font-lg {
+    font-size: 40px;
+  }
+
+  .mb-sm {
+      margin-bottom: 50px !important;
+  }
+
+.content-width-sm {
+    max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content-width-md {
+    max-width: 1694px;
+    margin: 0 auto;
+}
+
+
+.hero {
+    &__maintitle {
+        font-size: 8em;
+    }
+}
+
+.concept {
+
+  &__img {
+        top: 80px;
+        left: 243px;
+
+        & img {
+            width: 720px;
+            height: 789px;
+        }
+  }
+
+  
+      &__text {
+          padding:  167px 113px 191px 454px;
+      }
+
+    &__text-inner {
+        max-width: 723px;
+    }
+}
+
+.feature {
+    &__li:nth-child(1) {
+        padding-right: 80px;
+    }
+
+    &__li:nth-child(2) {
+        padding-left: 80px;
+    }
+
+    &__text {
+        flex-basis: 40%;
+    }
+    
+    &__image > img {
+        height: 430px;
+        width: 860px;
+    }
+}

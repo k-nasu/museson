@@ -1,0 +1,92 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 19px;
+  }
+  .font-lr {
+    font-size: 23px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+
+.swiper-slide {
+    & > img {
+      height: 245px;
+      width: 245px;
+    }
+  }
+
+.hero {
+    &__maintitle {
+    font-size: 6em;
+    }
+}
+
+.concept {
+    & img {
+        width: 560px;
+        height: 650px;
+    }
+
+    &__text {
+        padding:  166px 53px 191px 260px;
+    }
+
+    &__text-inner {
+        max-width: 723px;
+    }
+}
+
+.service-flow {
+    &__number {
+        left: -60px;
+        top: -120px;
+        width: 111px;
+        height: 312px;
+    }
+}
+
+.feature {
+    &__headline {
+        font-size: 6.8em;
+        font-weight: 200;
+        letter-spacing: .1em;
+        display: inline;
+        background: linear-gradient(transparent 98%, $base-color 0%);
+    }
+
+    &__instruction {
+        width: 63px;
+        height: 234px;
+    }
+
+    &__image > img {
+        height: 280px;
+        width: 460px;
+    }
+}
+  
+
+
+.travel {
+  &__inner {
+    padding: 50px 150px;
+  }
+}
+.popular {
+  &__item {
+    flex-basis: 23%;
+  }
+}
+
+.side {
+  display: block;
+}

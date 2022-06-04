@@ -1,0 +1,277 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.content-width-sm {
+    width: 90%;
+    max-width: 1448px;
+  margin: 0 auto;
+}
+
+.content-width-md {
+    width: 90%;
+    max-width: 1448px;
+  margin: 0 auto;
+}
+
+.content-width-lr {
+    width: 90%;
+    max-width: 1448px;
+  margin: 0 auto;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 30px;
+}
+
+.mb-sm {
+    margin-bottom: 50px !important;
+}
+
+.mb-md {
+    margin-bottom: 100px !important;
+}
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+
+
+// pc版は　padding-bottom　150px
+
+.pb-sm {
+    padding-bottom: 32px !important;
+}
+
+.pb-md {
+    padding-bottom: 82px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+
+.hero {
+    padding-top: $navHeight;
+
+    &__inner {
+        display: flex;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+
+    &__text-inner {
+        flex: 1;
+        padding-top: 50px;
+    }
+
+    &__maintitle {
+    font-size: 4em;
+    text-align: center;
+
+        & > span {
+            display: block;
+            line-height: 1.2em;
+        }
+    }
+
+    &__ul {
+        padding-left: 50px;
+    }
+
+    &__li {
+        padding: 0;
+    }
+
+    &__li::before {
+      top: 10px;
+      left: -30px;
+    }
+
+    &__images {
+        display: block;
+        flex: 1;
+    }
+}
+
+.concept {
+    background-color: $base-color;
+
+    &__inner {
+        flex-direction: row-reverse;
+    }
+
+  &__img {
+    position: absolute;
+    z-index: 1;
+    flex-basis: 40%;
+    top: 80px;
+    left:  calc(100% / 14);
+    }
+
+    &__text {
+        flex-basis: 67.2% ;
+        background-color: $main-color;
+    }
+
+  &__item {
+    flex-basis: 25%;
+  }
+
+  &__img {
+    height: 335px;
+  }
+
+    &__text {
+        padding:  100px 50px 100px 210px;
+        }
+
+    &__img > img {
+        width: 450px;
+        height: 500px;
+    }
+
+    &__title {
+        text-align: left;
+    }
+}
+
+.service-flow {
+    &__ul {
+        justify-content: space-evenly;
+    }
+
+    &__li {
+        flex-basis: 27%;
+
+        & > btn {
+            margin-top: 50px;
+        }
+
+    }
+    // &__description {
+    //     margin-bottom: 40px;
+    // }
+}
+
+.feature {
+    &__li:nth-child(1), &__li:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__li:nth-child(1) {
+        flex-direction: row-reverse;
+    }
+
+    &__li:nth-child(3) {
+        text-align: center;
+    }
+
+    &__li {
+        &:nth-child(1) > .feature__image {
+            padding-left: 0px;
+        }
+    
+        &:nth-child(2) > .feature__image {
+            padding-right: 0px;
+        }
+    }
+
+    &__text {
+        flex-basis: 60%;
+    }
+
+    &__image > img {
+        height: 240px;
+        width: 400px;
+    }
+
+}
+
+.review {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__li {
+        flex-basis: 45%;
+    }
+
+    &__image {
+        max-height: 677px;
+    }
+}
+
+.price-table {
+    & td {
+        padding: 20px 80px;
+    }
+}
+
+
+// .travel {
+//   &__img {
+//     height: 400px;
+//   }
+
+//   &__description {
+//     margin-bottom: 40px;
+//   }
+//   &__title {
+//     &::before {
+//       display: block;
+//     }
+//   }
+// }
+
+.footer {
+    &__ul {
+        flex-direction: column;
+    }
+
+  &__li {
+    justify-content: flex-start;
+  }
+
+  &__sns-images img {
+    margin-right: 50px;
+    width: 59px;
+    height: 59px;
+  }
+
+  & .followus-icon > img {
+    width: 280px;
+  }
+}
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+    &__btn {
+        display: none;
+    }
+}
+
+.swiper-slide {
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}

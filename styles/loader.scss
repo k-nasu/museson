@@ -1,0 +1,114 @@
+@import 'modules/variables';
+@import 'modules/mixin';
+
+.pace {
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.pace .pace-progress {
+  transform: none !important;
+  text-align: center;
+}
+
+.pace .pace-progress::after {
+  content: attr(data-progress-text);
+  display: block;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
+  color: $main-color;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+.pace-progress-inner {
+  width: 40px;
+  height: 40px;
+  background-color: $main-color;
+  margin: 0 auto;
+  @include animation(
+    $name: sk-rotateplane,
+    $duration: 1.2s,
+    $iteration-count: infinite,
+    $timing-function: ease-in-out
+  );
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+/*画面遷移アニメーション*/
+.splashbg {
+  display: none;
+}
+
+.pace-done .splashbg {
+  display: block;
+  content: "";
+  position:fixed;
+  z-index: 3000;
+  width: 80%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-300%) skewX(-45deg);
+  background-color: $main-color;
+  @include animation(
+    $name: PageAnime,
+    $duration: 1.2s,
+    $timing-function: ease-in-out
+  );
+}
+
+@keyframes PageAnime {
+  0% {
+    transform-origin: left;
+    transform: translateX(-300%) skewX(-45deg);
+  }
+  100% {
+    transform-origin: left;
+    transform: translateX(500%) skewX(-45deg);
+  }
+}
+
+#container {
+  opacity: 0;
+}
+
+.pace-done #container {
+  // transition: opacity 1s;
+  opacity: 0;
+  @include animation(
+    $name: PageAnimeAppear,
+    $duration: 1s,
+    $delay: 0.6s
+  );
+}
+
+@keyframes PageAnimeAppear{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,64 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.content-width-sm {
+    width: 90%;
+    max-width: 450px;
+  margin: 0 auto;
+}
+
+.content-width-md {
+    width: 90%;
+    max-width: 450px;
+  margin: 0 auto;
+}
+
+.content-width-lr {
+    width: 90%;
+    max-width: 450px;
+  margin: 0 auto;
+}
+
+.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.swiper-slide {
+  & > img {
+    height: 170px;
+    width: 170px;
+  }
+}
+
+.hero {
+  &__maintitle {
+    font-size: 3em;
+  }
+}
+
+.concept {
+    &__inner {
+        flex-direction: column;
+    }
+}
+
+.price-table {
+    & td {
+        padding: 20px 40px;
+    }
+}
+
+
+.footer {
+    & .logo {
+        justify-content: flex-start;
+    }
+
+    &__li {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+}
