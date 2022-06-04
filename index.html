@@ -89,7 +89,7 @@
                                 <img class="item" src="images/halacious-4M-SloLmUHg-unsplash.jpg" alt="" >
                             </div>
                             
-                            <img src="images/electoronicGitter.jpg" alt="hero images" class="hero__bk">
+                            <!-- <img src="images/electoronicGitter.jpg" alt="hero images" class="hero__bk"> -->
                             <div class="hero__footer">
                                 <img class="hero__downarrow" src="images/arrow.svg" alt="scroll guidance">
                                 <span class="hero__scrolltext">scroll</span>
@@ -349,6 +349,29 @@
         </nav>
     </div>
 
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBQpMj4OueQkTc6PyurBNrflTlJLEfevA8",
+        authDomain: "museson-f535f.firebaseapp.com",
+        projectId: "museson-f535f",
+        storageBucket: "museson-f535f.appspot.com",
+        messagingSenderId: "548809332104",
+        appId: "1:548809332104:web:1117476e54b5628c1c963d",
+        measurementId: "G-2MGFTBYNBE"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <script src="scripts/vendors/swiper.min.js"></script>
     <script src="scripts/vendors/TweenMax.min.js"></script>
     <script src="scripts/vendors/scroll-polyfill.js"></script>
